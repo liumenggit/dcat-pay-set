@@ -1,0 +1,32 @@
+{
+    "name": "liumenggit/pay-set",
+    "alias": "支付设置",
+    "description": "界面化添加支付信息",
+    "type": "library",
+    "keywords": ["dcat-admin", "extension"],
+    "homepage": "https://github.com/liumenggit/pay-set",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "rrsyycm",
+            "email": "rrsyycm@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "dcat/laravel-admin": "~2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Liumenggit\\PaySet\\": "src/"
+        }
+    },
+    "extra": {
+        "dcat-admin": "Liumenggit\\PaySet\\PaySetServiceProvider",
+        "laravel": {
+            "providers": [
+                "Liumenggit\\PaySet\\PaySetServiceProvider"
+            ]
+        }
+    }
+}
